@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Info"
+    >
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/modify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/modifyicon"
+        android:backgroundTint="#ffffff"
+        android:backgroundTintMode="src_atop"
+        android:layout_margin="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        app:fabSize="normal"
+        />
+
+        <Button
+            android:id="@+id/shareButton"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/shareicon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+    <TextView
+        android:id="@+id/heroAlias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="HeroAlias"
+        android:textColor="#faa755"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.252"
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/imageView"/>
+
+    <TextView
+        android:id="@+id/heroName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="#ffffff"
+        android:text="HeroName"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/heroAlias"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/heroAlias"
+        app:layout_constraintTop_toBottomOf="@+id/heroAlias"
+        app:layout_constraintBottom_toBottomOf="@id/imageView"
+        app:layout_constraintVertical_bias="0.044" />
+
+    <com.example.alias.arenaofvalor.CircleProgressView
+        android:id="@+id/circleProgressView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.216"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <com.example.alias.arenaofvalor.CircleProgressView
+        android:id="@+id/circleProgressView2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/circleProgressView"
+        app:layout_constraintStart_toStartOf="@+id/circleProgressView"
+        app:layout_constraintTop_toBottomOf="@+id/circleProgressView"
+        app:layout_constraintVertical_bias="0.09" />
+
+    <com.example.alias.arenaofvalor.CircleProgressView
+        android:id="@+id/circleProgressView3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/circleProgressView2"
+        app:layout_constraintStart_toStartOf="@+id/circleProgressView2"
+        app:layout_constraintTop_toBottomOf="@+id/circleProgressView2"
+        app:layout_constraintVertical_bias="0.097" />
+
+
+    <com.example.alias.arenaofvalor.CircleProgressView
+        android:id="@+id/circleProgressView4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/circleProgressView3"
+        app:layout_constraintStart_toStartOf="@+id/circleProgressView3"
+        app:layout_constraintTop_toBottomOf="@+id/circleProgressView3"
+        app:layout_constraintVertical_bias="0.13" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:hint="生存能力"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/circleProgressView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/circleProgressView"
+        app:layout_constraintTop_toTopOf="@+id/circleProgressView" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:textSize="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:hint="攻击伤害"
+        app:layout_constraintBottom_toBottomOf="@+id/circleProgressView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/circleProgressView2"
+        app:layout_constraintTop_toTopOf="@+id/circleProgressView2" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:textSize="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:hint="技能效果"
+        app:layout_constraintBottom_toBottomOf="@+id/circleProgressView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/circleProgressView3"
+        app:layout_constraintTop_toTopOf="@+id/circleProgressView3" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:textSize="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:hint="上手难度"
+        app:layout_constraintBottom_toBottomOf="@+id/circleProgressView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/circleProgressView4"
+        app:layout_constraintTop_toTopOf="@+id/circleProgressView4" />
+
+    <TextView
+        android:id="@+id/positionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:hint="位置"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/heroName"
+        app:layout_constraintTop_toBottomOf="@+id/heroName"/>
+
+    <com.example.alias.arenaofvalor.LoweImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:alpha="0.7"
+        app:srcCompat="@drawable/add"
+        android:scaleType="centerCrop"
+        app:ratio="1.46"/>
+
+</android.support.constraint.ConstraintLayout>
