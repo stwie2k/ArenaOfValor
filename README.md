@@ -1,6 +1,5 @@
 # Arena of Valor 使用手册
 
-Present by MAD Group 09 
 
 ------------------------
 
